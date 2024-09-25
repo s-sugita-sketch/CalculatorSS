@@ -16,7 +16,14 @@ namespace Calculator
         /// </summary>
         public string ShowCharactor;
 
-        
+        /// <summary>
+        /// 表示文字列設定
+        /// </summary>
+        /// <param name="showString"></param>
+        public void SetShowString(string showString)
+        {
+            this.Text = showString;
+        }
 
     }
 }

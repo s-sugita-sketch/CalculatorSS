@@ -32,7 +32,7 @@
             this.Button7 = new CustomButton();
             this.Button8 = new CustomButton();
             this.Button9 = new CustomButton();
-            this.ButtonDevide = new CustomButton();
+            this.ButtonDivide = new CustomButton();
             this.Button4 = new CustomButton();
             this.Button5 = new CustomButton();
             this.Button6 = new CustomButton();
@@ -40,21 +40,24 @@
             this.Button1 = new CustomButton();
             this.Button2 = new CustomButton();
             this.Button3 = new CustomButton();
-            this.ButtonMunus = new CustomButton();
+            this.ButtonMinus = new CustomButton();
             this.Button0 = new CustomButton();
             this.ButtonEnd = new System.Windows.Forms.Button();
             this.ButtonPlus = new CustomButton();
+            this.buttonClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ShowArea
             // 
+            this.ShowArea.BackColor = System.Drawing.Color.Transparent;
             this.ShowArea.Enabled = false;
+            this.ShowArea.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.ShowArea.Location = new System.Drawing.Point(-1, -1);
             this.ShowArea.Name = "ShowArea";
             this.ShowArea.Size = new System.Drawing.Size(438, 101);
             this.ShowArea.TabIndex = 0;
             this.ShowArea.TabStop = false;
-            this.ShowArea.UseVisualStyleBackColor = true;
+            this.ShowArea.UseVisualStyleBackColor = false;
             // 
             // Button7
             // 
@@ -92,17 +95,17 @@
             this.Button9.UseVisualStyleBackColor = true;
             this.Button9.Click += new System.EventHandler(this.Button9_Click);
             // 
-            // ButtonDevide
+            // ButtonDivide
             // 
-            this.ButtonDevide.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.ButtonDevide.Location = new System.Drawing.Point(324, 96);
-            this.ButtonDevide.Name = "ButtonDevide";
-            this.ButtonDevide.Size = new System.Drawing.Size(113, 71);
-            this.ButtonDevide.TabIndex = 4;
-            this.ButtonDevide.TabStop = false;
-            this.ButtonDevide.Text = "/";
-            this.ButtonDevide.UseVisualStyleBackColor = true;
-            this.ButtonDevide.Click += new System.EventHandler(this.ButtonDevide_Click);
+            this.ButtonDivide.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ButtonDivide.Location = new System.Drawing.Point(324, 96);
+            this.ButtonDivide.Name = "ButtonDivide";
+            this.ButtonDivide.Size = new System.Drawing.Size(113, 71);
+            this.ButtonDivide.TabIndex = 4;
+            this.ButtonDivide.TabStop = false;
+            this.ButtonDivide.Text = "/";
+            this.ButtonDivide.UseVisualStyleBackColor = true;
+            this.ButtonDivide.Click += new System.EventHandler(this.ButtonDevide_Click);
             // 
             // Button4
             // 
@@ -188,17 +191,17 @@
             this.Button3.UseVisualStyleBackColor = true;
             this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // ButtonMunus
+            // ButtonMinus
             // 
-            this.ButtonMunus.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.ButtonMunus.Location = new System.Drawing.Point(324, 230);
-            this.ButtonMunus.Name = "ButtonMunus";
-            this.ButtonMunus.Size = new System.Drawing.Size(113, 71);
-            this.ButtonMunus.TabIndex = 12;
-            this.ButtonMunus.TabStop = false;
-            this.ButtonMunus.Text = "-";
-            this.ButtonMunus.UseVisualStyleBackColor = true;
-            this.ButtonMunus.Click += new System.EventHandler(this.ButtonMunus_Click);
+            this.ButtonMinus.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ButtonMinus.Location = new System.Drawing.Point(324, 230);
+            this.ButtonMinus.Name = "ButtonMinus";
+            this.ButtonMinus.Size = new System.Drawing.Size(113, 71);
+            this.ButtonMinus.TabIndex = 12;
+            this.ButtonMinus.TabStop = false;
+            this.ButtonMinus.Text = "-";
+            this.ButtonMinus.UseVisualStyleBackColor = true;
+            this.ButtonMinus.Click += new System.EventHandler(this.ButtonMunus_Click);
             // 
             // Button0
             // 
@@ -217,7 +220,7 @@
             this.ButtonEnd.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.ButtonEnd.Location = new System.Drawing.Point(107, 298);
             this.ButtonEnd.Name = "ButtonEnd";
-            this.ButtonEnd.Size = new System.Drawing.Size(223, 71);
+            this.ButtonEnd.Size = new System.Drawing.Size(113, 71);
             this.ButtonEnd.TabIndex = 15;
             this.ButtonEnd.TabStop = false;
             this.ButtonEnd.Text = "=";
@@ -236,14 +239,27 @@
             this.ButtonPlus.UseVisualStyleBackColor = true;
             this.ButtonPlus.Click += new System.EventHandler(this.ButtonPlus_Click);
             // 
+            // buttonClear
+            // 
+            this.buttonClear.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.buttonClear.Location = new System.Drawing.Point(217, 298);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(113, 71);
+            this.buttonClear.TabIndex = 17;
+            this.buttonClear.TabStop = false;
+            this.buttonClear.Text = "AC";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(436, 369);
+            this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.ButtonPlus);
             this.Controls.Add(this.ButtonEnd);
             this.Controls.Add(this.Button0);
-            this.Controls.Add(this.ButtonMunus);
+            this.Controls.Add(this.ButtonMinus);
             this.Controls.Add(this.Button3);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
@@ -251,7 +267,7 @@
             this.Controls.Add(this.Button6);
             this.Controls.Add(this.Button5);
             this.Controls.Add(this.Button4);
-            this.Controls.Add(this.ButtonDevide);
+            this.Controls.Add(this.ButtonDivide);
             this.Controls.Add(this.Button9);
             this.Controls.Add(this.Button8);
             this.Controls.Add(this.Button7);
@@ -270,7 +286,7 @@
         private CustomButton Button7;
         private CustomButton Button8;
         private CustomButton Button9;
-        private CustomButton ButtonDevide;
+        private CustomButton ButtonDivide;
         private CustomButton Button4;
         private CustomButton Button5;
         private CustomButton Button6;
@@ -278,10 +294,11 @@
         private CustomButton Button1;
         private CustomButton Button2;
         private CustomButton Button3;
-        private CustomButton ButtonMunus;
+        private CustomButton ButtonMinus;
         private CustomButton Button0;
         private System.Windows.Forms.Button ButtonEnd;
         private CustomButton ButtonPlus;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
 
