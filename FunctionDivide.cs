@@ -16,7 +16,6 @@ namespace Calculator
         /// <returns></returns>
         public double GetResult(double value1, double value2)
         {
-            // TODO: 0除算時の処理の追加をお願いします
             return value1 / value2;
         }
     }

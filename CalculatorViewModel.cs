@@ -123,6 +123,12 @@ namespace Calculator
                 return this.value1;
             }
 
+            if (result2 == 0.0 && targetFunction == FunctionKinds.divide)
+            {
+                // 0除算
+                return this.value1 + " ÷ " + this.value2; 
+            }
+
             switch (targetFunction)
             {
                 case FunctionKinds.minus:
