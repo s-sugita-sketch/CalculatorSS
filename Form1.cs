@@ -64,7 +64,7 @@ namespace Calculator
         private void Button0_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button0.Text);
-            this.ShowArea.Text += this.Button0.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace Calculator
         private void Button1_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button1.Text);
-            this.ShowArea.Text += this.Button1.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace Calculator
         private void Button2_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button2.Text);
-            this.ShowArea.Text += this.Button2.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace Calculator
         private void Button3_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button3.Text);
-            this.ShowArea.Text += this.Button3.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -128,7 +128,7 @@ namespace Calculator
         private void Button6_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button6.Text);
-            this.ShowArea.Text += this.Button6.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -139,7 +139,7 @@ namespace Calculator
         private void Button5_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button5.Text);
-            this.ShowArea.Text += this.Button5.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -150,7 +150,7 @@ namespace Calculator
         private void Button4_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button4.Text);
-            this.ShowArea.Text += this.Button4.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -161,7 +161,7 @@ namespace Calculator
         private void Button7_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button7.Text);
-            this.ShowArea.Text += this.Button7.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -172,7 +172,7 @@ namespace Calculator
         private void Button8_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button8.Text);
-            this.ShowArea.Text += this.Button8.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -183,7 +183,7 @@ namespace Calculator
         private void Button9_Click(object sender, EventArgs e)
         {
             this.viewModel.SetValue(this.Button9.Text);
-            this.ShowArea.Text += this.Button9.Text;
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
 
         /// <summary>
@@ -205,6 +205,17 @@ namespace Calculator
         {
             this.viewModel.ClearData();
             this.ShowArea.Text = string.Empty;
+        }
+
+        /// <summary>
+        /// 小数点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonDot_Click(object sender, EventArgs e)
+        {
+            this.viewModel.SetValue(this.ButtonDot.Text);
+            this.ShowArea.Text = this.viewModel.GetShowString();
         }
     }
 }

@@ -77,16 +77,19 @@ namespace Calculator
         /// <summary>
         /// 値設定
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">末尾の文字列</param>
         public void SetValue(string value)
         {
+            // 小数点以下5桁までにする
             if (targetFunction == FunctionKinds.none)
             {
                 this.value1 += value;
+                this.value1 = (value == "." )? GetDecimalString(this.value1) + "." : GetDecimalString(this.value1);
             }
             else
             {
                 this.value2 += value;
+                this.value2 = (value == ".") ? GetDecimalString(this.value2) + "." : GetDecimalString(this.value2);
             }
         }
 
@@ -113,17 +116,17 @@ namespace Calculator
         /// <returns>計算できれば結果、計算できなければ""</returns>
         public string GetResult()
         {
-            if (!Double.TryParse(this.value1, out double result1))
+            if (!Decimal.TryParse(this.value1, out decimal result1))
             {
                 return string.Empty;
             }
 
-            if (!Double.TryParse(this.value2, out double result2))
+            if (!Decimal.TryParse(this.value2, out decimal result2))
             {
                 return this.value1;
             }
 
-            if (result2 == 0.0 && targetFunction == FunctionKinds.divide)
+            if (result2 == 0 && targetFunction == FunctionKinds.divide)
             {
                 // 0除算
                 return this.value1 + " ÷ " + this.value2; 
@@ -148,6 +151,9 @@ namespace Calculator
                     break;
             }
 
+            // 小数点以下5桁までにする
+            this.value1 = GetDecimalString(this.value1);
+
             if (this.targetFunction != FunctionKinds.none)
             {
                 this.targetFunction = FunctionKinds.none;
@@ -165,6 +171,45 @@ namespace Calculator
             this.value1 = string.Empty;
             this.value2 = string.Empty;
             this.targetFunction = FunctionKinds.none;
+        }
+
+        /// <summary>
+        /// 表示用の文字列取得
+        /// </summary>
+        /// <returns>表示用の文字列</returns>
+        public string GetShowString()
+        {
+            var showString = string.Empty;
+            switch (targetFunction)
+            {
+                case FunctionKinds.minus:
+                    showString = this.value1 + " - " + this.value2;
+                    break;
+                case FunctionKinds.plus:
+                    showString = this.value1 + " + " + this.value2;
+                    break;
+                case FunctionKinds.multi:
+                    showString = this.value1 + " X " + this.value2;
+                    break;
+                case FunctionKinds.divide:
+                    showString = this.value1 + " ÷ " + this.value2;
+                    break;
+                default:
+                    showString = this.value1;
+                    break;
+            }
+            return showString;
+        }
+
+        /// <summary>
+        /// decimalで整えた結果取得
+        /// </summary>
+        /// <param name="original"></param>
+        /// <returns>decimalで整えた結果</returns>
+        private string GetDecimalString(string original)
+        {
+            Decimal.TryParse(original, out decimal result);
+            return Decimal.Round(result, 5).ToString();
         }
     }
 }

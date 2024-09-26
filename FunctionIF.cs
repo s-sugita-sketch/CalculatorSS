@@ -11,6 +11,6 @@
         /// <param name="value1"></param>
         /// <param name="value2"></param>
         /// <returns></returns>
-        double GetResult(double value1, double value2);
+        decimal GetResult(decimal value1, decimal value2);
     }
 }

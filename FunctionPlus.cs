@@ -14,7 +14,7 @@ namespace Calculator
         /// <param name="value1">計算用の値1</param>
         /// <param name="value2">計算用の値2</param>
         /// <returns></returns>
-        public double GetResult(double value1, double value2)
+        public decimal GetResult(decimal value1, decimal value2)
         {
             return value1 + value2;
         }
