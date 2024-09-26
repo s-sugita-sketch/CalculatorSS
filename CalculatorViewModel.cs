@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Calculator
 {
@@ -91,6 +88,8 @@ namespace Calculator
                 this.value2 += value;
                 this.value2 = (value == ".") ? GetDecimalString(this.value2) + "." : GetDecimalString(this.value2);
             }
+
+            LogOut();
         }
 
         /// <summary>
@@ -106,6 +105,8 @@ namespace Calculator
             }
 
             this.targetFunction = function;
+
+            LogOut();
 
             return this.value1;
         }
@@ -171,6 +172,8 @@ namespace Calculator
             this.value1 = string.Empty;
             this.value2 = string.Empty;
             this.targetFunction = FunctionKinds.none;
+
+            LogOut();
         }
 
         /// <summary>
@@ -210,6 +213,18 @@ namespace Calculator
         {
             Decimal.TryParse(original, out decimal result);
             return Decimal.Round(result, 5).ToString();
+        }
+
+        /// <summary>
+        /// ログ出力
+        /// </summary>
+        private void LogOut()
+        {
+#if DEBUG
+            Debug.WriteLine(GetShowString());
+#else
+            
+#endif
         }
     }
 }

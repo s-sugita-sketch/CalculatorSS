@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "D:\\Users\\jinse\\Source\\Repos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|D:\\Users\\jinse\\Source\\Repos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|d:\\users\\jinse\\source\\repos\\calculatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:calculatorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|D:\\Users\\jinse\\Source\\Repos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|D:\\Users\\jinse\\Source\\Repos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|d:\\users\\jinse\\source\\repos\\functionminus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:functionminus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|D:\\Users\\jinse\\Source\\Repos\\functionif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:functionif.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|D:\\Users\\jinse\\Source\\Repos\\functiondivide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:functiondivide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|d:\\users\\jinse\\source\\repos\\functionmulti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:functionmulti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|d:\\users\\jinse\\source\\repos\\functionplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:functionplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|D:\\Users\\jinse\\Source\\Repos\\custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5AC68E4-A97D-47D7-A308-D1C4F050A238}|Calculator.csproj|solutionrelative:custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,106 +30,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FunctionPlus.cs",
-              "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\FunctionPlus.cs",
-              "RelativeDocumentMoniker": "FunctionPlus.cs",
-              "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\FunctionPlus.cs",
-              "RelativeToolTip": "FunctionPlus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T05:13:26.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FunctionMulti.cs",
-              "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\FunctionMulti.cs",
-              "RelativeDocumentMoniker": "FunctionMulti.cs",
-              "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\FunctionMulti.cs",
-              "RelativeToolTip": "FunctionMulti.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T05:13:25.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FunctionMinus.cs",
-              "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\FunctionMinus.cs",
-              "RelativeDocumentMoniker": "FunctionMinus.cs",
-              "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\FunctionMinus.cs",
-              "RelativeToolTip": "FunctionMinus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T05:13:24.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FunctionDivide.cs",
-              "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\FunctionDivide.cs",
-              "RelativeDocumentMoniker": "FunctionDivide.cs",
-              "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\FunctionDivide.cs",
-              "RelativeToolTip": "FunctionDivide.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T05:08:33.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CalculatorViewModel.cs",
               "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\CalculatorViewModel.cs",
               "RelativeDocumentMoniker": "CalculatorViewModel.cs",
               "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\CalculatorViewModel.cs",
               "RelativeToolTip": "CalculatorViewModel.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAwFsAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAcwNwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T06:11:12.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FunctionIF.cs",
-              "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\FunctionIF.cs",
-              "RelativeDocumentMoniker": "FunctionIF.cs",
-              "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\FunctionIF.cs",
-              "RelativeToolTip": "FunctionIF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T05:57:00.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAEwNkAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T05:23:41.048Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomButton.cs",
-              "DocumentMoniker": "D:\\Users\\jinse\\Source\\Repos\\CustomButton.cs",
-              "RelativeDocumentMoniker": "CustomButton.cs",
-              "ToolTip": "D:\\Users\\jinse\\Source\\Repos\\CustomButton.cs",
-              "RelativeToolTip": "CustomButton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T04:45:25.039Z"
             },
             {
               "$type": "Document",
